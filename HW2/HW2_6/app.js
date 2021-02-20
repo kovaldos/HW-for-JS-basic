@@ -39,7 +39,9 @@ let beforeLastDigitOfDepo = strDepo.charAt(strDepo.length - 2)
  */
 function getRobleCases(strDepo) {
 
-    if (lastDigitOfDepo == "1")
+    if (lastDigitOfDepo == "1" && beforeLastDigitOfDepo == "1")
+        return "рублей";
+    else if (lastDigitOfDepo == "1")
         return "рубль";
     else if (lastDigitOfDepo == "0" || beforeLastDigitOfDepo == "1")
         return "рублей";
