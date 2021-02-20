@@ -1,0 +1,49 @@
+
+Я с подобным случаем заморочился на подготовительном курсе. Правда сделал более примитивно наверно.
+Тогда не знал про switch, и с функциями не особо подружился.))
+
+<script type="text/javascript">
+
+		var score = 0;
+		var userAnswer = prompt ("Отгадайте загадку: Не отыскать её корней, верхушка выше тополей, всё круче вверх она идёт - а всё же не растёт.");
+		userAnswer = userAnswer.toLowerCase();
+		if (userAnswer == "гора" || userAnswer == "скала") {
+			alert ("Вы угадали!");
+			score ++;
+		}
+			else
+			alert ("Вы не угадали");
+
+		var userAnswer = prompt ("Отгадайте загадку: Без голоса кричит, без крыльев - а летает, и безо рта свистит, и без зубов кусает.");
+		userAnswer = userAnswer.toLowerCase();
+		if (userAnswer == "ветер" || userAnswer == "вихрь") {
+			alert ("Вы угадали!");
+			score ++;
+		}
+			else
+			alert ("Вы не угадали");
+
+		var userAnswer = prompt ("Отгадай загадку: Без замка, без крышки сделан сундучок, а внутри хранится золота кусок.");
+		userAnswer = userAnswer.toLowerCase();
+		if (userAnswer == "яйцо" || userAnswer == "яйца") {
+			alert ("Вы угадали!");
+			score ++;
+		}
+			else
+			alert ("Вы не угадали");
+
+		var score1 = 1;
+		var score2 = 2;
+		var score3 = 3;
+        var score4 = 0;
+
+		if (score == score1)
+			alert ("Игра окончена. Вы угадали " + score + " загадку.");
+				else if (score == score2)
+			alert ("Игра окончена. Вы угадали " + score + " загадки.");
+				else if (score == score3)
+			alert ("Игра окончена. Вы угадали все загадки!");
+                else if (score == score4)
+			alert ("Игра окончена. Вы не угадали ни одной загадки!");
+
+</script>
